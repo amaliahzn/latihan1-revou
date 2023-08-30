@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> /*Internal css & selector */
+
+       h1 {
+        color : greenyellow
+       }
+
+       #avanza {
+         color: blue
+       } /* tanda # untuk menandai class*/
+
+       .innova {
+         color :black
+       } /* tanda . untuk menandai id* id lebih diprioritaskan dari class*/
+
+       .divWithoutBoxSizing {
+        background-color: lightblue;
+        border: 20px solid blueviolet;
+        width: 200px;
+        padding-left: 50px;
+       } /*tanpa box sizing border, padding dan width
+       akan ditambahkan, membuat elemen lebih besar dr width
+       yang diinginkan (200px)*/
+
+       .divWithBoxSizing {
+        box-sizing: border-box;
+        background-color: yellow;
+        border: 5px solid red;
+        width: 200px;
+        padding-left: 50px;
+       } /*widht nya akan sesuai yaitu 200 ga peduli berapa
+       ukuran border dan paddingnya, krn padding border udah
+       include di widthnya...  ohhhhh*/
+
+       .flexbox {
+        display: flex;
+        background-color: wheat;
+        /*flex-direction: column-reverse; membalik urutan kolom*/
+        flex-direction: row;
+        align-items: center; /*end -> untuk diposisi bawah*/
+        justify-content: center;
+       }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--Box Sizing-->
+    <div class="divWithoutBoxSizing">
+        <h1 class="innova">Innova without box Sizing</h1>
+    </div>
+
+    <div class="divWithBoxSizing">
+        <h1 class="innova">Innova with box Sizing</h1>
+    </div>
+
+    <!--Selector internal CSS & flexbox-->
+    <div class="flexbox">
+        <h1>Nama-nama Mobil</h1>
+        <h1 class="innova">Mobil Innova</h1>
+        <p id="avanza">Mobil Avanza</p>
+        <p id="avanza" class="innova">Class vs Id</p>
+    </div>
+
+</body>
+</html>

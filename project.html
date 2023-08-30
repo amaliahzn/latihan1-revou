@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Demo Project</title>
+
+</head>
+
+<body>
+    <!-- MARK AS HEADER SECTION -->
+    <header class="header-wrapper">
+        <!--container-->
+        <img src="https://cdn.techinasia.com/data/images/zdQEsPmqELZFfztTR1daUzfql6AqA0WnxY0mC3sz.png" alt="Logo"
+            class="logo">
+        <nav id="headerNavigation">
+            <!--<a href="" id="box"><button>Home</button></a>
+            <a href="table.html" id="box"><button>Our Profile</button></a>
+            <a href="" id="box"><button>Achievement</button></a>
+            <a href="" id="box"><button>Message Us</button></a>-->
+            <button>Home</button>
+            <a href="table.html"><button>Our Profile</button></a>
+            <button>Achievement</button>
+            <button>Message Us</button>
+        </nav>
+    </header>
+
+    <!-- CONTENT SECTION -->
+    <main>
+        <div class="banner">
+            <h1>Hi, <span id="name">Amalia</span> Welcome to Karya Kemanusiaan!</h1>
+            <p>This is a paragraph</p>
+            <!--<button id="tombol">Ganti Nama</button>-->
+            <script src="JS/script.js"></script>
+        </div>
+
+        <div>
+            <img class="img-slideshow"
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80">
+        </div>
+
+        <div>
+            <img class="img-slideshow"
+                src="https://images.unsplash.com/photo-1505954137021-b6bf5a131a7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80">
+        </div>
+
+        <div>
+            <img class="img-slideshow"
+                src="https://images.unsplash.com/photo-1508182314998-3bd49473002f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80">
+        </div>
+        <!-- FILE JS-->
+        <script src="JS/script.js"></script>
+
+        <div class="Facilities">
+            <h2> Our Facilities </h2>
+            <div class="our-facilities">
+                <div>
+                    <img src="https://pbs.twimg.com/profile_images/1676971128546553856/63Vgt7Rr_400x400.jpg"
+                        class="our-img">
+                    <p class="Desc">Professional Teacher</p>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/1200x/fa/df/c6/fadfc6286ff372cae399d7420ea9a4c6.jpg" class="our-img">
+                    <p class="Desc">Sport Field</p>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/736x/18/0d/55/180d557d107e4f544c21d0559b1eb095.jpg" class="our-img">
+                    <p class="Desc">Classroom</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2> Message Us </h2>
+            <!--<form action=""> //action nanti disisipin js 
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+            </form> -->
+
+            <form name="message-form" onsubmit="return validateForm()" action="">
+                <p>
+                    <label>Nama :</label>
+                    <!--<input required type="text" placeholder="nama anda" id="name-input" name="name-input"> //validasi form biar ga kosong : required -->
+                    <input placeholder="Nama" type="text" name="full-name" />
+                </p>
+
+                <p>
+                    <label>Tanggal lahir :</label>
+                    <input type="date" name="birth-date" />
+                </p>
+
+                <p>
+                    <label>Jenis Kelamin :</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Perempuan</label>
+                </p>
+
+                <p>
+                    <label>Pesan :</label>
+                    <textarea placeholder="Pesan" name="messages"></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit" />
+                </p>
+
+                <!--<button id="submit" type="submit">Kirim</button>
+                <p id="error-name"></p>-->
+            </form>
+
+            <div>
+                <p>Nama: <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                <p>Pesan : <span id="sender-messages"></span></p>
+            </div>
+
+            <!--tempat outputnya
+            <h1>Hi. this is <span id="name">-</span>. Nice to meet you!</h1>-->
+        </div>
+        <script src="js/script.js"></script>
+    </main>
+
+    <footer>
+        <h6>Created by Amalia</h6>
+    </footer>
+</body>
+
+</html>

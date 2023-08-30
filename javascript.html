@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JS</title>
+</head>
+<body>
+    <form nama="message-form" onsubmit="return validateForm()">
+        <input type="text" placeholder="nama anda" id="name-input" name="name-input" required><!--validasi form biar ga kosong : required -->
+        <button id="submit" type="submit">Kirim</button>
+        <p id="error-name"></p>
+    </form>
+
+    <h1>Hi, this is <span id="name">-</span>. Nice to meet you!</h1>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

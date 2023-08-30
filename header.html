@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="header.css">
+        <style>
+            .container > {
+                justify-content: left;
+            }
+            .content {
+                flex-direction: row; 
+                display: flex;
+            }
+
+            .content > div {
+                display: flex; 
+                flex: 1; 
+                align-content: center; 
+                justify-content: center;
+            }
+            .table_person {
+                border: 3px ridge black;
+
+            }
+            footer > p{
+                text-align: end;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="container">
+            <img 
+            src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1166/original/RevoU_Logo_WhiteBG.png" 
+            class="logo" width="40" height="40"/>
+
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout">Logout</div>
+        </nav>
+
+        <header>
+            <h1>Form Belajar</h1>
+            <p> Ini adalah website latihan pertama</p>
+        </header>
+
+        <main class="content"> <!--Row untuk layout baris, kalo mau bikin kolom bisa pake 'column'-->
+            <div>
+                <h2>Ini Form</h2> <!--flex 1 : 1 = 50% : 50% pas ditengah2 layout-->
+                <!--bikin flex box skalanya bukan 1:1 misal 3:4-->
+            </div >
+            
+            <div>
+                <table class="table_person">
+                    <tr>
+                        <th>Nama</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Pesan</th>
+                        <th>Profile</th>
+                        <th>Hapus</th>
+                    </tr>
+                    <tr>
+                        <td>Gojo Satoru</td>
+                        <td>12 Januari 1996</td>
+                        <td>Laki-laki</td>
+                        <td>Belajar Website</td>
+                        <td><a href="#">Klik Disini</a></td>
+                        <td>Gambar</td>
+                    </tr>
+                    <tr>
+                        <td>Riko Amanai</td>
+                        <td>11 April 2009</td>
+                        <td>Perempuan</td>
+                        <td>Belajar Musik</td>
+                        <td><a href="#">Klik Disini</a></td>
+                        <td>Gambar</td>
+                    </tr>
+                    <tr>
+                        <td>Geto Suguru</td>
+                        <td>9 Desember 1997</td>
+                        <td>Laki-laki</td>
+                        <td>Belajar CSS</td>
+                        <td><a href="#">Klik Disini</a></td>
+                        <td>Gambar</td>
+                    </tr>
+                    <tr>
+                        <td>Shoko Eiri</td>
+                        <td>22 Desember 1996</td>
+                        <td>Perempuan</td>
+                        <td>Dokter Bedah</td>
+                        <td><a href="#">Klik Disini</a></td>
+                        <td>Gambar</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <p>RevoU 2023</p>
+        </footer>
+    </body>
+</html>
